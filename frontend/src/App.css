@@ -1,0 +1,38 @@
+/* Animasi background bergerak */
+@keyframes bgMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-bgMove {
+  animation: bgMove 5s ease infinite;
+}
+
+/* Efek Bounce pada header */
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+/* Efek Fade-In pada teks */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
