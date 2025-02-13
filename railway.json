@@ -1,0 +1,19 @@
+{
+    "services": {
+      "frontend": {
+        "build": {
+          "builder": "nixpacks",
+          "buildCommand": "cd frontend && npm install && npm run build",
+          "startCommand": "cd frontend && npm run dev"
+        }
+      },
+      "backend": {
+        "build": {
+          "builder": "nixpacks",
+          "buildCommand": "cd backend && npm install",
+          "startCommand": "cd backend && node server.js"
+        }
+      }
+    }
+  }
+  
